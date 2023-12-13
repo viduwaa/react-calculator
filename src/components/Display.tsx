@@ -80,7 +80,7 @@ function Display() {
                 <div className="text-[16px] px-[5px] text-gray-800">
                     {prevContent}
                 </div>
-                <div className="text-[48px]">{clickedContent}</div>
+                <div className="text-[48px] h-auto break-all">{clickedContent}</div>
             </div>
             <Buttons
                 btnValue="AC"

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Play', sans-serif;
+}
+
+@layer components {
+    .button {
+        @apply bg-stone-700 h-[50px] rounded text-white text-[25px] flex items-center justify-center border-white border;
+    }
+
+    .button:hover {
+        @apply bg-slate-500 transition-all duration-200 ease-in-out;
+    }
+
+    .calculator {
+        @apply grid row-auto md:grid-cols-[repeat(4,_minmax(75px,100px))] grid-cols-[repeat(4,_minmax(50px,80px))] md:m-auto m-[10px] content-center justify-center gap-[10px] transition-all h-[60vh]  ;
+    }
+
+    .display{
+        @apply col-span-full bg-slate-300 h-[100px] rounded-md flex flex-col items-end justify-between p-[10px] border-black border;
+    }
+
+    
+}
